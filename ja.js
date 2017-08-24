@@ -2,16 +2,7 @@
  * Created by Vaibhav on 8/23/2017.
  */
 
-var colors=[
-    "rgb(255, 0, 0)",
-    "rgb(0, 255, 0)",
-    "rgb(0, 0, 255)",
-    "rgb(255, 255, 0)",
-    "rgb(0, 255, 255)",
-    "rgb(255, 0, 255)",
-           ];
-
-var col=["blue","green","yellow"];
+var colors=col(6);
 var square=document.getElementsByClassName("squ");
 var t=ran();
 var picked=colors[t];
@@ -55,3 +46,21 @@ function  ran() {
 //
 // })
 
+function col(n) {
+    var arr=[];
+
+    for(var i=0;i<n;i++)
+    {
+        arr[i]=rado();
+    }
+    return(arr);
+
+}
+function rado() {
+    var r,g,b;
+    r=Math.floor(Math.random()*256);
+    g=Math.floor(Math.random()*256);
+    b=Math.floor(Math.random()*256);
+    return("rgb("+r+", "+g+", "+b+")");
+
+}
