@@ -3,13 +3,13 @@ body
     background-color: #232323;
 }
 #tie{
-    color: #fcfffa;
+    color: #c1b4d4;
     text-align: center;
 
 
 }
 .squ{
-    background-color: #f38b90;
+    /*background-color: #f38b90;*/
     width: 30%;
     float: left;
     margin: 10px;
@@ -21,15 +21,28 @@ body
 
 
 }
-span{
-    color: white;
+/*span{*/
+    /*color: white;*/
 
-}
+/*}*/
 #main{
     width: 600px;
 
     padding: 170px;
     margin: 0 auto;
+
+
+}
+.b
+{
+background-color: blue;
+}
+#strip{
+    background-color: rgba(215, 255, 132, 0.3);
+
+    text-align: center;
+    margin: 10px;
+    padding: 4px;
 
 
 }
